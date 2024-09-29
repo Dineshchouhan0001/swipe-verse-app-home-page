@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #F0F8FF; /* Alice Blue */
+    color: #2F4F4F; /* Dark Slate Gray */
+}
+
+/* Header Styles */
+header {
+    background-color: #003366; /* Midnight Blue for header */
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.logo h1 {
+    font-size: 2.5em;
+    color: #f0e000; /* Light Coral */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    animation: pulse 1.5s infinite; /* Infinite pulse animation */
+}
+
+/* Main Hero Section */
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 20px;
+    background-color: #e0f7fa; /* Light Cyan */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.left {
+    flex: 1;
+    min-width: 300px;
+}
+
+.couple-img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.right {
+    flex: 1;
+    padding: 20px;
+}
+
+.right h2 {
+    font-size: 2em;
+    color: #003366; /* Midnight Blue */
+}
+
+.cta-btn {
+    background-color: #FF6B6B; /* Coral */
+    color: #FFFFFF; /* White */
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #f7d202; /* Dark Salmon on hover */
+}
+
+/* Features Section */
+.features {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #e0f7fa; /* Lighter cyan */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Added shadow effect for features section */
+    border-radius: 10px; /* Optional: for rounded edges */
+}
+
+.features h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #003366; /* Midnight Blue */
+}
+
+.features-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.feature-item {
+    flex: 1 1 220px; /* Flexible width */
+    margin: 20px;
+    padding: 20px;
+    background-color: #FFFFFF; /* White for features */
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.feature-icon {
+    width: 60px;
+    margin-bottom: 10px;
+}
+
+.feature-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Success Stories Section */
+.success-stories {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.success-stories h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #003366; /* Midnight Blue */
+}
+
+.testimonials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.testimonial-item {
+    margin: 10px 0;
+    max-width: 500px;
+    padding: 20px;
+    background-color: #E6E6FA; /* Lavender */
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer Styles */
+footer {
+    background-color: #2F4F4F; /* Dark Slate Gray */
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer-links {
+    margin-top: 10px;
+}
+
+.footer-links a {
+    color: #FF6B6B; /* Light Coral */
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #E57373; /* Dark Salmon on hover */
+}
+
+/* Animation */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .content-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left, .right {
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .couple-img {
+        max-width: 90%;
+    }
+
+    .features-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature-item {
+        width: 90%; /* Full width on small screens */
+    }
+}
